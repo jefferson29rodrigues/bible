@@ -18,10 +18,16 @@ Route::get('/', function () {
 });
 
 Route::get('/ranking', function () {
-    $posicao = 2;
+    $colocacao = 6;
 
+    $arr = [1, 2, 3, 4, 5];
     
-    return view('ranking', ['posicao' => $posicao]);
+    return view('ranking', 
+        [
+            'posicao' => $colocacao,
+            'positions' => $arr
+        ]
+    );
 });
 
 Route::get('/chat', function () {
