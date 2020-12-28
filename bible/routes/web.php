@@ -16,3 +16,14 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/ranking', function () {
+    $posicao = 1;
+
+    
+    return view('ranking', );
+});
+
+Route::get('/chat', function () {
+    return view('/forum');
+});
