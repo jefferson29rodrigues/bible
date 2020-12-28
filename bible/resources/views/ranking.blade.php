@@ -10,6 +10,10 @@
    <br><br>
    <a href="/">Voltar para home</a>
 
-   @if ()
+   @if ($posicao == 1)
+   <p>$posicao Colocado Parabens!</p>
+   @else
+   <p>$posicao Colocado que pena...</p>
+   @endif
 </body>
 </html>

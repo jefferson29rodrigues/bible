@@ -18,10 +18,10 @@ Route::get('/', function () {
 });
 
 Route::get('/ranking', function () {
-    $posicao = 1;
+    $posicao = 2;
 
     
-    return view('ranking', );
+    return view('ranking', ['posicao' => $posicao]);
 });
 
 Route::get('/chat', function () {
