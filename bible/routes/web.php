@@ -21,6 +21,7 @@ Route::get('/ranking', function () {
     $colocacao = 6;
 
     $arr = [1, 2, 3, 4, 5];
+    $top5 = [$primeiro, $segundo, $terceiro, $quarto, $quinto];
     
     return view('ranking', 
         [
