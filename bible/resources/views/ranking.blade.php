@@ -10,6 +10,19 @@
    <br><br>
    <a href="/">Voltar para home</a>
 
+   @foreach ($colocados as $jogador)
+   <p>{{ $jogador }} Você é o {{ $loop->index+1 }} Colocado</p>
+   @endforeach
+
+   {{ print_r($pessoas) }}
+
+<br><br>
+ ---------------------------------------------
+   @foreach ($positions as $pos)
+   <p>Posição {{ $pos }}</p>
+   <p>Índice {{ $loop->index }}</p>
+   @endforeach
+
    @if ($posicao == 1)
    <p>{{ $posicao }}° Colocado MEDALHA DE OURO Parabens!</p>
    @elseif ($posicao == 2)
@@ -24,9 +37,6 @@
    <p>Este é o item {{ $positions[$i] }} do Array</p>
    @endfor
 
-   @foreach ($positions as $pos)
-   <p>Posição {{ $pos }}</p>
-   <p>Índice {{ $loop->index }}</p>
-   @endforeach
+   
 </body>
 </html>
