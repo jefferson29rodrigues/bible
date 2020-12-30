@@ -1,0 +1,16 @@
+body {
+    background-image: url("/img/jeffe.jpg");
+}
+
+div {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+h1 {
+    
+    color: red;
+}
+
+img {
+    width: 1336px;
+}
