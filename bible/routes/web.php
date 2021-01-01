@@ -54,3 +54,19 @@ Route::get('/ranking', function () {
 Route::get('/chat', function () {
     return view('/forum');
 });
+
+Route::get('/chat/{id}', function ($id) {
+    return view('/chater', ['id' => $id]);
+});
+
+Route::get('/produtos', function () {
+    return view('/products');
+});
+
+Route::get('/produtos/{id}', function () {
+    return view('/product', ['id' => $id]);
+});
+
+Route::get('/contact', function () {
+    return view('/contact');
+});
