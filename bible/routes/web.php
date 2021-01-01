@@ -60,10 +60,14 @@ Route::get('/chat/{id}', function ($id) {
 });
 
 Route::get('/produtos', function () {
-    return view('/products');
+
+    $busca = request('search');
+    $busca2 = request('idade');
+
+    return view('/products', ['busca' => $busca, 'idade' => $busca2]);
 });
 
-Route::get('/produtos/{id}', function () {
+Route::get('/produtos_teste/{id?}', function ($id = null) {
     return view('/product', ['id' => $id]);
 });
 

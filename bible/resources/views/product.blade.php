@@ -3,5 +3,9 @@
 @section('title', 'Produto')
 
 @section('content')
-    <p>Produto com o id: {{ $id }}</p>
+
+    @if($id != null)
+        <p>Produto com o id: {{ $id }}</p>
+    @endif
+
 @endsection
