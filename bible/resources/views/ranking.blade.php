@@ -1,11 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ranking</title>
-</head>
-<body>
+@extends('layouts.main')
+
+@section('title', 'Ranking')
+
+@section('content')
+<div>
    <h1>Ranking</h1>
    <br><br>
    <a href="/">Voltar para home</a>
@@ -15,9 +13,10 @@
    @endforeach
 
    {{ print_r($pessoas) }}
-
+</div>
 <br><br>
  ---------------------------------------------
+<div>
    @foreach ($positions as $pos)
    <p>Posição {{ $pos }}</p>
    <p>Índice {{ $loop->index }}</p>
@@ -36,7 +35,5 @@
    @for ($i = 1; $i < count($positions); $i++)
    <p>Este é o item {{ $positions[$i] }} do Array</p>
    @endfor
-
-   
-</body>
-</html>
+</div>
+@endsection
