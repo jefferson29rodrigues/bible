@@ -22,7 +22,7 @@
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="collapse navbar-collapse" id="navbar">
                     <a href="/" class="navbar-brand">
-                        <img src="/img/im3.jpg" alt="im34">
+                        <img src="/img/im34.jpg" alt="im34">
                     </a>
                     <ul class="navbar-nav">
                         <li class="nav-item">
