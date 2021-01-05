@@ -1,20 +1,67 @@
+/* General */
 * {
     font-family: Roboto;
 }
 
 body {
-    background-image: url("/img/jeffe.jpg");
+    min-height: 100vh;
+    padding-bottom: 100px;
+    position: relative;
 }
 
-div {
-    background-color: rgba(255, 255, 255, 0.7);
+header {
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
 }
 
-h1 {
-    
-    color: red;
+.row {
+    margin: 0;
 }
+
+.container-fluid {
+    padding: 0;
+}
+
+.btn-primary {
+    background-color: #f2a340;
+    border: 2px solid #c28008;
+}
+
+.btn-primary:hover {
+    background-color: #c28008;
+    border-color: #c28008;
+}
+
+/* Navbar */
 
 #navbar img {
-    width: 50px;
+    width: 40px;
+    border-radius: 20px;
+}
+
+#navbar {
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 5px 0;
+}
+
+#navbar a {
+    font-size: 14px;
+    color: #757575;
+}
+
+#navbar a:hover {
+    color: #f2a340;
+}
+
+/* Search Container */
+
+#search-container {
+    background-image: u  rl("../img/jeffe.jpg");
+    background-size: cover;
+    background-position: center;
+
+    height: 400px;
+    padding: 50px;
+    text-align: center;
 }
