@@ -36,7 +36,6 @@ header {
 
 #navbar img {
     width: 40px;
-    border-radius: 20px;
 }
 
 #navbar {
@@ -57,11 +56,23 @@ header {
 /* Search Container */
 
 #search-container {
-    background-image: u  rl("../img/jeffe.jpg");
+    background-image: url("../img/banner.jpg");
     background-size: cover;
-    background-position: center;
+    background-position:center;
 
     height: 400px;
     padding: 50px;
     text-align: center;
+    
+}
+
+#search-container h1 {
+    color: #f2a340;
+    margin-bottom: 30px;
+    font-weight: 900;
+}
+
+#search-container form {
+    width: 50%;
+    margin: 0 auto;
 }
