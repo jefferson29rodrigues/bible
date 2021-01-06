@@ -76,3 +76,9 @@ header {
     width: 50%;
     margin: 0 auto;
 }
+
+/* Events List */
+
+#events-container {
+    padding: 50px;
+}
