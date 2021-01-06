@@ -13,10 +13,10 @@
 
 <div id="events-container" class="col-md-12">
     <h2>Próximos Eventos</h2>
-    <p>Veja os eventos dos próximos dias</p>
+    <p class="subtitle">Veja os eventos dos próximos dias</p>
     <div id="cards-container" class="row">
         @foreach($events as $event)
-        <div class="card col-md3">
+        <div class= "card col-md-3">
             <img src="/img/event_placeholder.jpg" alt="{{ $event->title }}">
             <div class="card-body">
                 <p class="card-date">05/01/21</p>
