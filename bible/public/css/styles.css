@@ -32,6 +32,11 @@ header {
     border-color: #c28008;
 }
 
+.msg {
+    background-color: #d4edda;
+    color: #155724;
+}
+
 /* Navbar */
 
 #navbar img {
