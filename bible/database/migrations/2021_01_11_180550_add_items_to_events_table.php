@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class AddItemsToEventTable extends Migration
+class AddItemsToEventsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class AddItemsToEventTable extends Migration
      */
     public function up()
     {
-        Schema::table('event', function (Blueprint $table) {
+        Schema::table('events', function (Blueprint $table) {
             $table->json('items');
         });
     }
@@ -25,7 +25,7 @@ class AddItemsToEventTable extends Migration
      */
     public function down()
     {
-        Schema::table('event', function (Blueprint $table) {
+        Schema::table('events', function (Blueprint $table) {
             $table->dropColumn('items');
         });
     }
