@@ -26,6 +26,10 @@
             </div>
         </div>
         @endforeach
+
+        @if(count($events) == 0)
+            <p>Não há eventos disponíveis</p>
+        @endif
     </div>
 </div>
 
