@@ -35,7 +35,7 @@
                 class="form-control" 
                 id="date" 
                 name="date" 
-                value="{{ $event->date->format('y-m-d') }}"
+                value="{{ $event->date->format('Y-m-d') }}"
             >
         </div>
 
