@@ -47,6 +47,7 @@
                 id="city" 
                 name="city" 
                 placeholder="Local do evento"
+                value="{{ $event->city }}"
             >
         </div>
 
@@ -54,7 +55,7 @@
             <label for="title">O evento é privado?</label>
             <select name="private" id="private" class="form-control">
                 <option value="0">Não</option>
-                <option value="1">Sim</option>
+                <option value="1" {{ $event->private == 1 ? "selected='selected '" : "" }} >Sim</option>
             </select>
         </div>
 
