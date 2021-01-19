@@ -150,4 +150,16 @@ class EventController extends Controller
 
     }
 
+    public function leaveEvent($id) {
+
+        $user = auth()->user();
+
+        $event = Event::findOrFail($id);
+
+        $user->eventsAsParticipant()->detach($id);
+
+        return redirect('/dashboard')->with('msg', 'Você saiu com sucesso do evento: ' . $event->title);
+
+    }
+
 }
