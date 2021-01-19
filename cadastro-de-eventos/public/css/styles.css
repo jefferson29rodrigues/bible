@@ -42,10 +42,36 @@ header {
     padding: 10px;
 }
 
+#info-container .already-joined-msg {
+    margin: 15px 0;
+    color: #004085;
+    background-color: #cce5ff;
+    border: 1px solid #b8daff;
+    padding: 10px;
+    width: 275px;
+}
+
 /* Navbar */
+
+#navbar .logo-and-name {
+    display: flex;
+    
+    height: 40px;
+}
+
+#navbar .logo-and-name p {
+    margin-top: 10px;
+    margin-left: 5px;
+    font-weight: bold;
+}
 
 #navbar img {
     width: 40px;
+    margin-left: 20px;
+}
+
+#navbar ul {
+    margin-right: 20px;
 }
 
 #navbar {

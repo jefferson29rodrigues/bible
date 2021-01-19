@@ -22,7 +22,10 @@
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="collapse navbar-collapse" id="navbar">
                     <a href="/" class="navbar-brand">
-                        <img src="/img/hdcevents_logo.svg" alt="im34">
+                        <div class="logo-and-name">
+                            <img src="/img/hdcevents_logo.svg" alt="im34">
+                            <p>JR Eventos</p>
+                        </div>
                     </a>
                     <ul class="navbar-nav">
                         <li class="nav-item">
