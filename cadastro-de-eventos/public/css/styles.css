@@ -65,6 +65,10 @@ header {
     font-weight: bold;
 }
 
+#navbar .navbar-brand:hover {
+    color: #757575;
+}
+
 #navbar img {
     width: 40px;
     margin-left: 20px;
